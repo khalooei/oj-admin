@@ -38,6 +38,7 @@ class StoreContestRequest extends FormRequest
         return [
             'title'       => 'required|max:191',
             // 'slug'        => 'required|unique:contests',
+            'slug'        => 'unique:contests',
             'description' => 'required',
             'active_at'   => 'required|date',
             'start_at'    => 'required|date',
