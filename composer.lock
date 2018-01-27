@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "840445385b0ed40d9902e5f2af5ce9b8",
+    "content-hash": "8875c06fc32f21b3b979a38dc7b7ddff",
     "packages": [
         {
             "name": "arcanedev/log-viewer",
@@ -422,6 +422,50 @@
                 "parser"
             ],
             "time": "2017-03-29T16:04:15+00:00"
+        },
+        {
+            "name": "gstt/laravel-achievements",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gstt/laravel-achievements.git",
+                "reference": "7807592a70bde10fb960d7ef75b625613a1d0050"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gstt/laravel-achievements/zipball/7807592a70bde10fb960d7ef75b625613a1d0050",
+                "reference": "7807592a70bde10fb960d7ef75b625613a1d0050",
+                "shasum": ""
+            },
+            "require": {
+                "ramsey/uuid": "^3.5"
+            },
+            "require-dev": {
+                "laravel/laravel": "^5.3",
+                "phpunit/phpunit": "^5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/Migrations"
+                ],
+                "psr-4": {
+                    "Gstt\\Achievements\\": "src/",
+                    "Gstt\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gabriel Simonetti",
+                    "email": "simonettigo@gmail.com"
+                }
+            ],
+            "description": "Achievements for Laravel 5.3+",
+            "time": "2017-03-08T03:42:08+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1312,6 +1356,63 @@
                 "schedule"
             ],
             "time": "2017-01-23T04:29:33+00:00"
+        },
+        {
+            "name": "nanigans/single-table-inheritance",
+            "version": "0.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Nanigans/single-table-inheritance.git",
+                "reference": "e07817592d4b868069f534d57589090d7a205647"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Nanigans/single-table-inheritance/zipball/e07817592d4b868069f534d57589090d7a205647",
+                "reference": "e07817592d4b868069f534d57589090d7a205647",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.2.*|5.3.*|5.4.*|5.5.*",
+                "illuminate/support": "5.2.*|5.3.*|5.4.*|5.5.*",
+                "php": ">= 5.5.9"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "orchestra/database": "3.2.*|3.5.*",
+                "orchestra/testbench": "3.2.*|3.5.*",
+                "phpunit/phpunit": "~4.8|~5.2|~6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nanigans\\SingleTableInheritance\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jon Palmer",
+                    "email": "jpalmer@nanigans.com"
+                }
+            ],
+            "description": "Single Table Inheritance Trait",
+            "keywords": [
+                "eloquent",
+                "inheritance",
+                "laravel",
+                "model",
+                "single",
+                "table"
+            ],
+            "time": "2017-10-17T17:37:29+00:00"
         },
         {
             "name": "nesbot/carbon",

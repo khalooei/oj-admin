@@ -201,6 +201,8 @@ return [
         App\Providers\MacroServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Gstt\Achievements\AchievementsServiceProvider::class,
+
     ],
 
     /*

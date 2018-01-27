@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Backend\Problem;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Auth;
 
 class UpdateProblemRequest extends FormRequest
 {

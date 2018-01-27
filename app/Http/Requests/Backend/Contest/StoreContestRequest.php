@@ -30,9 +30,14 @@ class StoreContestRequest extends FormRequest
             'user_id' => Auth::user()->id
         ]);
 
+        // $this->slug = str_slug($this->title) .'-'. str_random(6);
+        // $this->user_id = Auth::user()->id;
+
+        // dd($this->slug);
+
         return [
             'title'       => 'required|max:191',
-            'slug'        => 'required|unique:contests',
+            // 'slug'        => 'required|unique:contests',
             'description' => 'required',
             'active_at'   => 'required|date',
             'start_at'    => 'required|date',

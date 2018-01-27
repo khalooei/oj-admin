@@ -99,7 +99,14 @@ class ProblemController extends Controller
      */
     public function update(Problem $problem, UpdateProblemRequest $request)
     {
-        dd($request->all());
+        // dd($request->all());
+        $data = $request->except('_token');
+        dd($data);
+
+        // $newProblem = Problem::create($data);
+        // event(new ProblemCreated($newProblem));
+        
+        return redirect()->route('admin.problem.index')->withFlashSuccess(trans('alerts.backend.problem.updated'));
     }
 
     /**
